@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Pacifico", cursive;
+}
+.wrapper {
+  border: 2px solid #eba4c3;
+  width: 60%;
+  max-width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+.wrapper h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1;
+  font-size: 2rem;
+  color: transparent;
+  background-image: -o-linear-gradient(left, yellow, tomato, #5485d0, #64f381);
+  background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(tomato), color-stop(#5485d0), to(#64f381));
+  background-image: linear-gradient(to right, yellow, tomato, #5485d0, #64f381);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate 3s linear infinite;
+  -webkit-animation: animate 3s linear infinite;
+  background-size: 200%;
+  text-align: center;
+}
+
+.wrapper h3 {
+  padding: 10px 0 20px;
+}
+.wrapper h4 {
+  text-align: right;
+  font-size: 2rem;
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0%, 50%;
+  }
+  50% {
+    background-position: 100%, 0%;
+  }
+  100% {
+    background-position: 0%, 50%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%, 50%;
+  }
+  50% {
+    background-position: 100%, 0%;
+  }
+  100% {
+    background-position: 0%, 50%;
+  }
+}
